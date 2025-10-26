@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Project 2- Unified Mentor</h1>
+  <h1>Tic Tac Toe</h1>
+
+  <!-- scores shown here -->
+  <div class="scoreboard">
+    <div>Player X: <span id="scoreX">0</span></div>
+    <div>Player O: <span id="scoreO">0</span></div>
+  </div>
+
+  <!-- game buttons -->
+  <div class="controls">
+    <button onclick="startGame('single')">Single Player</button>
+    <button onclick="startGame('double')">Two Players</button>
+    <button onclick="resetScores()">Reset Scores</button>
+  </div>
+
+  <!-- the 3x3 grid -->
+  <div class="board" id="board"></div>
+
+  <div class="message" id="message"></div>
+
+  <!-- js script -->
+  <script src="script.js"></script>
+</body>
+</html>
